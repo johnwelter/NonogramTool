@@ -1,0 +1,49 @@
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\GlyphMaker.exe.config
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\GlyphMaker.exe
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\bin\Debug\GlyphMaker.pdb
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.csprojResolveAssemblyReference.cache
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.g.cs
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\App.g.cs
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker_MarkupCompile.cache
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker_MarkupCompile.lref
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.baml
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.g.resources
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.Properties.Resources.resources
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.csproj.GenerateResource.Cache
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.exe
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.pdb
+c:\users\john welter\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\obj\Debug\Dictionary1.baml
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\bin\Debug\GlyphMaker.exe.config
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\bin\Debug\GlyphMaker.exe
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\bin\Debug\GlyphMaker.pdb
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.csproj.AssemblyReference.cache
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.csproj.SuggestedBindingRedirects.cache
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.g.cs
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\App.g.cs
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker_MarkupCompile.cache
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker_MarkupCompile.lref
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\Dictionary1.baml
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\MainWindow.baml
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.g.resources
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.Properties.Resources.resources
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.csproj.GenerateResource.cache
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.csproj.CoreCompileInputs.cache
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.exe
+Z:\Tools\Projects\WpfApplication2\WpfApplication2\obj\Debug\GlyphMaker.pdb
+Z:\Tools\Projects\NonoGram\WpfApplication2\bin\Debug\GlyphMaker.exe.config
+Z:\Tools\Projects\NonoGram\WpfApplication2\bin\Debug\GlyphMaker.exe
+Z:\Tools\Projects\NonoGram\WpfApplication2\bin\Debug\GlyphMaker.pdb
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.csproj.AssemblyReference.cache
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.csproj.SuggestedBindingRedirects.cache
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\MainWindow.g.cs
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\App.g.cs
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker_MarkupCompile.cache
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker_MarkupCompile.lref
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\Dictionary1.baml
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\MainWindow.baml
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.g.resources
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.Properties.Resources.resources
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.csproj.GenerateResource.cache
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.csproj.CoreCompileInputs.cache
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.exe
+Z:\Tools\Projects\NonoGram\WpfApplication2\obj\Debug\GlyphMaker.pdb

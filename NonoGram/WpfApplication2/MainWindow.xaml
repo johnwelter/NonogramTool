@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApplication2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="GlyphMaker" Height="635" Width="744.025"
+        ResizeMode="NoResize">
+
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+
+    <Grid Margin="0,0,0,-3.5" Background="Black">
+        <TextBox x:Name="textBlock" IsReadOnly="True" HorizontalAlignment="Center" Margin="0,362,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="204" Width="682" Foreground="White" Background="#FF303030"/>
+        <Grid Width="300" Margin="31,13,0,266" Name="GlyphGrid" HorizontalAlignment="Left"/>
+        <Button x:Name="button" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="保存" HorizontalAlignment="Left" Height="74" Margin="342,196,0,0" VerticalAlignment="Top" Width="198" FontSize="48" Click="SaveClick" BorderBrush="White" Foreground="White" Background="#FF0600FF"/>
+        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Height="39" Margin="342,152,0,0" TextWrapping="Wrap" Text="myGlyph" VerticalAlignment="Top" Width="120" FontSize="20" PreviewTextInput="FileValidationTextBox" Foreground="White" BorderBrush="White" Background="Black" SelectionBrush="#FF68FF00" TextChanged="nameBox_TextChanged"/>
+        <Label x:Name="nameit" Content="ファイル名" HorizontalAlignment="Left" Height="39" Margin="342,108,0,0" VerticalAlignment="Top" Width="146" FontSize="20" Foreground="White"/>
+        <TextBlock x:Name="saveDialog" HorizontalAlignment="Left" Height="82" Margin="342,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" Foreground="White"/>
+        <Label x:Name="nameit_Copy" Content=".png" HorizontalAlignment="Left" Height="39" Margin="470,152,0,0" VerticalAlignment="Top" Width="70" FontSize="20" Foreground="#FF8F8F8F"/>
+        <TextBox x:Name="glyphSizeBox" HorizontalAlignment="Left" Height="38" Margin="414,11,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="126" FontSize="20" MaxLength="2" PreviewTextInput="NumberValidationTextBox" BorderBrush="White" Background="Black" Foreground="White" SelectionBrush="#FF68FF00" TextChanged="glyphSizeBox_TextChanged"/>
+        <Separator HorizontalAlignment="Left" Height="19" Margin="338,89,0,0" VerticalAlignment="Top" Width="202"/>
+        <Label x:Name="nameit_Copy1" Content="解像度" HorizontalAlignment="Left" Height="38" Margin="342,11,0,0" VerticalAlignment="Top" Width="72" FontSize="20" Foreground="White"/>
+        <Label x:Name="label" Content="開発者&#xA;CatFort&#xA;&#xA;&#xA;Ver. 1.0&#xA;2024-05-04" HorizontalAlignment="Left" Height="304" Margin="563,11,0,0" VerticalAlignment="Top" Width="151" FontSize="20" Grid.IsSharedSizeScope="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF0600FF" Foreground="White" BorderBrush="White" BorderThickness="1"/>
+        <Button x:Name="glyphResizeButton" Content="実行" HorizontalAlignment="Left" Height="35" Margin="338,54,0,0" VerticalAlignment="Top" Width="202" FontSize="20" Click="ResizeClick" BorderBrush="White" Foreground="White" Background="#FF0600FF"/>
+
+    </Grid>
+</Window>
