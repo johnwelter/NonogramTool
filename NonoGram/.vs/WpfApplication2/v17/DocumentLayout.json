@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\",
+  "WorkspaceRootPath": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|c:\\users\\john\\documents\\github\\nonogramtool\\nonogram\\wpfapplication2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|z:\\gamedev\\tools\\homebrewtools\\repros\\nonogramtool\\nonogram\\wpfapplication2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|solutionrelative:wpfapplication2\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\wpfapplication2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|solutionrelative:wpfapplication2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\wpfapplication2\\notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|solutionrelative:wpfapplication2\\notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\wpfapplication2\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\wpfapplication2\\dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|solutionrelative:wpfapplication2\\dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\wpfapplication2\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|solutionrelative:wpfapplication2\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\wpfapplication2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\wpfapplication2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|solutionrelative:wpfapplication2\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\wpfapplication2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|WpfApplication2\\GlyphMaker.csproj|solutionrelative:wpfapplication2\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -26,54 +34,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\App.xaml",
-              "RelativeDocumentMoniker": "WpfApplication2\\App.xaml",
-              "ToolTip": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\App.xaml",
-              "RelativeToolTip": "WpfApplication2\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-23T13:16:35.157Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml.cs",
+              "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WpfApplication2\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml.cs",
+              "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml.cs",
               "RelativeToolTip": "WpfApplication2\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAPoAAAAAAAAAAAAAAHcBAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAKwBAAAAAAAAAAAgwL4BAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T13:16:35.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "WpfApplication2\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "WpfApplication2\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVDhP3ZC/TxpxGMbf73GAeIhXKz9SbWMQ\u002B8NcMMWgQtpGBwZjhybWGhs2p66t1SYdutXO7aTtaOLQgYmBkgh0aqjBhGgjlCiHSOU8hEPkDg7uete0Y/\u002BA9jO8eYfnGT4P/Pto1BORI/jC3AJpnDB2NZ1NwnrfSow8GtH7Xf5GNBpFnjnPJeY2Y/A/9Ytrr9d6Tm6ddJhdZpGO0RImyzKG7WNjHM8FGlgjSXQRSRNuSpKI/Fh0FnsP2cMhXuQDOkkXoI/osVK99FloCYE8nh\u002BDV4Dhob0QeVQ\u002BWtnOb7ttRpvWO\u002B7d1\u002BP6Vl2ss0OXhwxNsflsK7NFKRnIsJllwGAgX81bZUl\u002B7ADHLh5OhfFas3YNRzhM35z\u002BqkGaFzLIVVZgeXunvaj8G\u002B6r7nspJgVaTLsxS83eLXCF0/PG\u002Bac\u002B6Kvj4YMw2DptMHpl9EAQhUUf5UshhCR1G1WvwBaYbkO3qNPokMVoYXqJXkmv1YsYwioxiEmYGmxLbQAErUw1U/pTVuE4jqy1au83E5uDaTZtj2QiH5aCS2SaSTva0H4\u002BbBomca/VCwISIFvJdpTrZSq0GzpTy0yF4XfKO3S/tn/Fd923wl6wSNFbWxxfXF7/ss5luew7c9VcxadcU63iaTEXz8XvtOX22\u002BxZVlRGhAvxIp34kXgy6ZmM585zy2QHCTODMzRloWjlF4WGkIu9jLWQ6hncDU4cl4/fRL5HbigLg\u002BIMAz0DeybZNL86v3r6y\u002BcvYKozQRFxsod8ABI4K/WKkxd4pyALD3XfdKXfuf8XgJ/U5B69phRCXgAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-11-23T13:16:35.407Z"
+              "DocumentIndex": 1,
+              "Title": "Notes.txt",
+              "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\Notes.txt",
+              "RelativeDocumentMoniker": "WpfApplication2\\Notes.txt",
+              "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\Notes.txt",
+              "RelativeToolTip": "WpfApplication2\\Notes.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-27T21:34:26.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "App.xaml",
+              "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\App.xaml",
+              "RelativeDocumentMoniker": "WpfApplication2\\App.xaml",
+              "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\App.xaml",
+              "RelativeToolTip": "WpfApplication2\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-23T13:16:35.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml",
+              "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WpfApplication2\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\John\\Documents\\GitHub\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml",
+              "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\MainWindow.xaml",
               "RelativeToolTip": "WpfApplication2\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-23T13:16:35.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dictionary1.xaml",
+              "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\Dictionary1.xaml",
+              "RelativeDocumentMoniker": "WpfApplication2\\Dictionary1.xaml",
+              "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\Dictionary1.xaml",
+              "RelativeToolTip": "WpfApplication2\\Dictionary1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-29T16:33:42.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "WpfApplication2\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\NonogramTool\\NonoGram\\WpfApplication2\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "WpfApplication2\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:16:35.407Z"
             }
           ]
         }

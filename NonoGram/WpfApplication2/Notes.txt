@@ -1,0 +1,16 @@
+
+
+two modes - puzzle mode and picture mode
+
+puzzle mode should allow a paint like system - click and drag, overwriting buttons with last color set
+(IE click a black button which switches it to white, hold and drag to cause all moused-over buttons with white)
+
+picture mode- big jum pin quality of program, might jsut use NESST to create the images
+
+in fact- allow extract of buttons as a nametable, allow as import into nesst
+
+
+            //when puzzle is finished, wipe all but the puzzle tiles away
+            //scroll to center image
+            //drwa in new image, grey scale only (color might be too hard, currently
+            //maybe set up a monochrome pallete?

@@ -25,6 +25,24 @@
 
     </Style>
 
+    <Style x:Key="GridLabel" TargetType="Label">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Background" Value="Black"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Label">
+                    <Border Name="border"
+               BorderThickness="1"
+               BorderBrush="Gray"
+               Background="{TemplateBinding Background}">
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
 
 
     <!--         <Style TargetType="Button" x:Key="RimButton">
