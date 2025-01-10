@@ -349,6 +349,10 @@ namespace WpfApplication2
 
             if (byteIdx != 0)
             {
+                for(int i = byteIdx; i < 3; i++)
+                {
+                    byteVal = byteVal << 2;
+                }
                 metaString += " $" + byteVal.ToString("X2") + ",";
             }
 
