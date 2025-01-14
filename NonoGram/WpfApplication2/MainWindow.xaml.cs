@@ -526,6 +526,7 @@ namespace WpfApplication2
             int correctMarksHi = correctMarks & 0x0000FF00;
             int palOffset = comboBox.SelectedIndex;
             palOffset |= (bool)checkBox.IsChecked ? 0x10 : 0;
+            palOffset |= (bool)keepWhite.IsChecked ? 0x20 : 0;
 
             header += String.Format(" ${0}, ${1}, ${2}, ${3}", headerSize.ToString("X2"), correctMarksLo.ToString("X2"), correctMarksHi.ToString("X2"), palOffset.ToString("X2"));
 
@@ -556,7 +557,8 @@ namespace WpfApplication2
         {
             String name = nameBox.Text.ToLower();
             String nameData = ".db";
-
+            int count = name.Length;
+            nameData += " $" + count.ToString("X2") + ",";
             foreach (char c in name)
             {
                 int val = (int)(c - 'a');
