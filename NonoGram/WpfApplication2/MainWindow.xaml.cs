@@ -521,7 +521,7 @@ namespace WpfApplication2
                     colString += ",";
                 }
             }
-            int headerSize = glyphSize;
+            int headerSize = glyphSize-1;
             int correctMarksLo = correctMarks & 0x000000FF;
             int correctMarksHi = correctMarks & 0x0000FF00;
             int palOffset = comboBox.SelectedIndex;
