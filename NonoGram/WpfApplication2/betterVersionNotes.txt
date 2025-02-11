@@ -1,0 +1,31 @@
+have everything save out to a given location relavtive to the program, and put the program in the game files folder
+
+when hitting export, overwrite the existing files 
+
+should be able from there to hit make/open the game
+
+
+file organization
+- load up a bank file (a JSON file)
+- bank file includes list of puzzles
+- puzzles are made up of raw bytes, and are what would be the final export to be     used in game
+- something like:
+	<bank>
+	   <puzzle_1>
+		<bytes....>
+	   <pussle_2>
+		<bytes....>
+
+- a bank file has ONLY 27 puzzles, all initially empty puzzles
+- puzzles are listed in a list
+- select puzzle on list, hit load
+- pop up to ask if you want to save current puzzle
+- load puzzle info from bytes into grids
+- edit puzzle grids
+- save 
+- select next puzzle
+- etc
+- hit export to export full bank bin file and bank ASM
+- keep track of puzzle bytes, and total byte count
+- don't allow export if byte count is higher than 8k (shouldn't be a problem)
+
