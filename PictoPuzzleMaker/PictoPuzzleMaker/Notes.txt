@@ -1,0 +1,26 @@
+
+
+file format:
+
+Puzzle Bank File (json?):
+
+-puzzle0
+	- size
+	- name
+	- puzzle data
+		- solution board (0, 1, 0, 1, 0, 0, 1... etc)
+		- image board (0, 2, 3, 2, 3, 0, 0... etc)
+-puzzle1
+-puzzle2
+-puzzle3
+...
+-puzzle26
+
+save options
+
+save - save JSON file
+export - exports puzzles to ASM files
+	- will also export sprite tables along with everything else - we'll write a function to create CHR data as well and populate the sprite table
+
+
+	
