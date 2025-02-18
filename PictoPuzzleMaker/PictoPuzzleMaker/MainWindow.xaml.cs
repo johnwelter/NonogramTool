@@ -874,6 +874,8 @@ namespace PictoPuzzleMaker
         private void ResetClick(object sender, RoutedEventArgs e)
         {
             //clear the puzzle
+            currentPuzzle.ClearPuzzle();
+            LoadPuzzleFromListView();
         }
 
         private void LoadPuzzleFromListView()
