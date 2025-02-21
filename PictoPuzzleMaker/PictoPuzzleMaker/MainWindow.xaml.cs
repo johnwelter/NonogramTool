@@ -68,6 +68,8 @@ namespace PictoPuzzleMaker
         string currentPath = "";
         string exportPath = "";
 
+        
+
         public MainWindow()
         {
             FullPalette.LoadFullpalette();
@@ -268,9 +270,7 @@ namespace PictoPuzzleMaker
             }
 
             currentPuzzle.SetSolution(x, y, newVal);
-            BrushConverter bgc = new BrushConverter();
-            ((Label)sender).Background = (System.Windows.Media.Brush)bgc.ConvertFromString("#" + Consts.solutionColors[newVal].ToString("X8"));
-
+            UpdateGridColors();
         }
 
         private void NTGridClick(object sender)
@@ -703,9 +703,7 @@ namespace PictoPuzzleMaker
             //    output += createNameData(p);
             //    output += "\n";
             //}
-
             //File.WriteAllText(nameBox.Text + ".asm", output);
-
         }
 
 
@@ -866,9 +864,113 @@ namespace PictoPuzzleMaker
 
         }
 
-        private void LoadSelectedClick(object sender, RoutedEventArgs e)
+        private bool CheckValid(out int[,] outGrid)
         {
             //LoadPuzzleFromListView();   
+            //make the clue list
+            int size = Puzzle.s_SideLengths[currentPuzzle.puzzleSize];
+            List<int[]> colClues = new List<int[]>();
+            List<int[]> rowClues = new List<int[]>();
+
+            List<int> clues = new List<int>();
+            int runTotal = 0;
+
+            for (int x = 0; x < size; x++)
+            {
+                for (int y = 0; y < size; y++)
+                {
+                    int mark = currentPuzzle.GetSolution(x, y);
+                    if (mark == 0)
+                    {
+                        if (runTotal > 0)
+                        {
+                            clues.Add(runTotal);
+                            runTotal = 0;
+                        }
+                    }
+                    else
+                    {
+                        runTotal++;
+                    }
+                }
+
+                if (runTotal > 0)
+                {
+                    clues.Add(runTotal);
+                    runTotal = 0;
+                }
+
+                int[] colClue = clues.ToArray();
+                colClues.Add(colClue);
+                clues.Clear();
+            }
+
+            for (int y = 0; y < size; y++)
+            {
+                clues.Clear();
+                for (int x = 0; x < size; x++)
+                {
+                    int mark = currentPuzzle.GetSolution(x, y);
+                    if (mark == 0)
+                    {
+                        if (runTotal > 0)
+                        {
+                            clues.Add(runTotal);
+                            runTotal = 0;
+                        }
+                    }
+                    else
+                    {
+                        runTotal++;
+                    }
+                }
+
+                if (runTotal > 0)
+                {
+                    clues.Add(runTotal);
+                    runTotal = 0;
+                }
+
+                int[] rowClue = clues.ToArray();
+                rowClues.Add(rowClue);
+                clues.Clear();
+            }
+
+            int[,] solved = Solver.ValiditySolver.GetSolvedGrid(size, rowClues.ToArray(), colClues.ToArray());
+
+            bool valid = true;
+            for (int x = 0; x < size; x++)
+            {
+                for (int y = 0; y < size; y++)
+                {
+                    if (solved[x, y] == 0)
+                    {
+                        valid = false;
+                        break;
+                    }
+                }
+                if (!valid)
+                {
+                    break;
+                }
+            }
+
+            outGrid = solved;
+
+            return valid;
+        }
+        private void CheckClick(object sender, RoutedEventArgs e)
+        {
+            int[,] grid;
+            if(CheckValid(out grid))
+            {
+                MessageBoxResult confirmOpen = MessageBox.Show("Valid!", "Validity Check", MessageBoxButton.OK);
+            }
+            else
+            {
+                MessageBoxResult confirmOpen = MessageBox.Show("Invalid! has unsolvable tiles", "Validity Check", MessageBoxButton.OK);
+            }
+
         }
 
         private void ResetClick(object sender, RoutedEventArgs e)
@@ -886,15 +988,7 @@ namespace PictoPuzzleMaker
             glyphSizeBox.Text = currentPuzzle.puzzleSize.ToString();
 
             updateGridSize();
-            BrushConverter bgc = new BrushConverter();
-            foreach (Label button in butts)
-            {
-                //set the color of the solution buttons to match the puzzle
-                int x = Grid.GetColumn(button);
-                int y = Grid.GetRow(button);
-                int val = currentPuzzle.GetSolution(x, y);
-                button.Background = (System.Windows.Media.Brush)bgc.ConvertFromString("#" + Consts.solutionColors[val].ToString("X8"));
-            }
+            UpdateGridColors();
             int index = 0;
             bool enabled = false;
             bool bright = false;
@@ -908,6 +1002,31 @@ namespace PictoPuzzleMaker
             UpdateNTColors();
 
 
+        }
+
+        void UpdateGridColors()
+        {
+            int[,] grid;
+            CheckValid(out grid);
+
+            BrushConverter bgc = new BrushConverter();
+
+            foreach (Label button in butts)
+            {
+                int x = Grid.GetColumn(button);
+                int y = Grid.GetRow(button);
+                bool valCheck = grid[y, x] != 0;
+                int val = currentPuzzle.GetSolution(x, y);
+                uint color = Consts.solutionColors[val];
+                if(!valCheck)
+                {
+                    color &= 0xFF888888;
+                    color += 0x00770000;
+                }
+                 
+                button.Background = (System.Windows.Media.Brush)bgc.ConvertFromString("#" + color.ToString("X8"));
+            }
+            
         }
 
         public void UpdateNTColors()
