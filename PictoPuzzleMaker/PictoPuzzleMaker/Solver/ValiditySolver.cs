@@ -12,16 +12,14 @@ using System.Threading.Tasks;
 
 namespace PictoPuzzleMaker.Solver
 {
+
+    //following a soltion by Kniffen:
+    //https://github.com/kniffen/Nonogram-Maker
     public static class ValiditySolver
     {
 
         public static int[,] GetSolvedGrid(int size, int[][] horizontalClues, int[][] verticalClues)
         {
-
-            //we could make this without the original grid, but having access to this solved grid might make it easier to 
-            //show where unsolvable tiles are
-
-            //won't be too slow or anything, either
 
             //instantiate new grid and clear it
             int[,] grid = new int[size, size];

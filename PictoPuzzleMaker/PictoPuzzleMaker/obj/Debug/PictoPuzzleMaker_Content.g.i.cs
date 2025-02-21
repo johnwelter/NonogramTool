@@ -8,8 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("solver/app.js")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("solver/generate-clues.js")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("solver/solver.js")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("solver/textfile1.txt")]
 
 
