@@ -68,10 +68,12 @@ namespace PictoPuzzleMaker
         string currentPath = "";
         string exportPath = "";
 
+        List<byte[]> puzzleSolutionCache = null;
         
 
         public MainWindow()
         {
+            puzzleSolutionCache = new List<byte[]>();
             FullPalette.LoadFullpalette();
             defaultPuzzle = new Puzzle(0);
             InitializeComponent();
@@ -402,6 +404,8 @@ namespace PictoPuzzleMaker
             int mapByteIndex = 0;
             int mapBitIndex = 0;
 
+            List<byte> solutionBytes = new List<byte>();
+
             for (int i = 0; i < mapSize; i++)
             {
                 List<int> rowNumbers = new List<int>();
@@ -548,6 +552,8 @@ namespace PictoPuzzleMaker
             int pal3 = puzzle.GetPaletteAt(2);
 
             header += String.Format(" ${0}, ${1}, ${2}, ${3}, ${4}, ${5}", headerSize.ToString("X2"), correctMarksLo.ToString("X2"), correctMarksHi.ToString("X2"), pal1.ToString("X2"), pal2.ToString("X2"), pal3.ToString("X2"));
+
+            puzzleSolutionCache.Add((byte[])mapBytes.Clone());
 
             String Map = ".db";
             for (int i = 0; i < mapBytes.Length; i++)
@@ -796,11 +802,13 @@ namespace PictoPuzzleMaker
         {
             string expPath = "";
             string expTables = "";
+            string expSprites = "";
 
             expPath = currentFileName;
             expTables = currentFileName + "Tables";
+            expSprites = currentFileName + "Sprites";
 
-
+            puzzleSolutionCache.Clear();
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.FileName = expPath;
@@ -852,12 +860,55 @@ namespace PictoPuzzleMaker
                         }
 
                     }
+
+                }
+                String output = puzzleTable + "\n" + puzzleNames;
+                File.WriteAllText(exportPath, output);
+
+
+            }
+
+            saveFileDialog.FileName = expSprites;
+            saveFileDialog.Filter = "CHR (*.chr)|*.chr";
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                exportPath = saveFileDialog.FileName;
+                //do bin export
+
+                //16 bytes per tile, 4 tiles per puzzle, 27 puzzles
+
+                byte[] solutionCHR = new byte[3840]; //everyting but 16 tiles
+                for (int i = 0; i < solutionCHR.Length; i++)
+                {
+                    solutionCHR[i] = 0;
                 }
 
-                String output = puzzleTable + "\n" + puzzleNames;
+                for (int puzzleIdx = 0; puzzleIdx < puzzleSolutionCache.Count; puzzleIdx++)
+                {
+                    byte[] puzzle = puzzleSolutionCache[puzzleIdx];
+                    int puzzleOffset = puzzleIdx * 64;
+                    int puzzleSize = Math.Sign(puzzle.Length / 10); //this is a hack, but should work for our needs- everything over 5 will use 2 bytes per row
 
-                File.WriteAllText(exportPath, output);
+                    for (int byteIdx = 0; byteIdx < puzzle.Length; byteIdx++)
+                    {
+                        int colOffset = (((byteIdx & 16) << 1) + ((byteIdx & 1) << 4)) * puzzleSize;
+
+                        //also a hack
+                        int rowIndexOffset = puzzleSize > 0 ? byteIdx >> 1 : byteIdx;
+
+                        int rowOffset = (rowIndexOffset) & 7;
+                        byte tileByte = puzzle[byteIdx];
+                        int finalIdx = puzzleOffset + rowOffset + colOffset;
+                        solutionCHR[finalIdx] = tileByte;
+                        solutionCHR[finalIdx + 8] = tileByte;
+                    }
+
+                }
+
+                File.WriteAllBytes(exportPath, solutionCHR);
             }
+
+
         }
         private void Toolbar_About(object sender, RoutedEventArgs e)
         {

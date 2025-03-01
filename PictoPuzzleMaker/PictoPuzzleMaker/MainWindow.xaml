@@ -38,7 +38,7 @@
                 <MenuItem Header="About" Click="Toolbar_About"/>
             </MenuItem>
         </Menu>
-        <Grid x:Name="grid" Background="Black" Margin="0,24,0,0" Grid.RowSpan="2">
+        <Grid x:Name="grid" Margin="0,24,0,0" Grid.RowSpan="2" Background="Black">
 
 
             <Grid.ColumnDefinitions>
@@ -79,7 +79,7 @@
             <ComboBox x:Name="comboBox" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Width="120" Grid.Column="3" Height="22" Grid.Row="1" RenderTransformOrigin="0.506,0.44" SelectionChanged="EasyPalChanged"/>
             <CheckBox x:Name="checkBox" Content="Use Brighter Colors&#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="46,68,0,0" VerticalAlignment="Top" Height="22" Width="126" Foreground="White" Checked="UseBrightsChecked" Unchecked="UseBrightsChecked" Grid.Column="3" Grid.Row="1"/>
             <CheckBox x:Name="keepWhite" Content="Keep White" HorizontalAlignment="Left" Margin="46,90,0,0" VerticalAlignment="Top" Height="22" Width="126" Foreground="White" Checked="UseWhiteChecked" Unchecked="UseWhiteChecked" Grid.Column="3" Grid.Row="1"/>
-            <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,13,0,10" xmlns:local="clr-namespace:PictoPuzzleMaker.WPFUtils" SelectionChanged="listView_SelectionChanged">
+            <ListView x:Name="listView" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,13,0,10" xmlns:local="clr-namespace:PictoPuzzleMaker.WPFUtils" SelectionChanged="listView_SelectionChanged" Grid.RowSpan="2">
                 <ListView.Resources>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -100,7 +100,6 @@
             </ListView>
             <CheckBox x:Name="useEzPal" Content="Use EasyPal" HorizontalAlignment="Left" Margin="46,18,0,0" VerticalAlignment="Top" Height="22" Width="126" Foreground="White" Checked="UseEasyPalChecked" Unchecked="UseEasyPalChecked" Grid.Column="3" Grid.Row="1"/>
             <Button x:Name="button_Copy" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Reset" HorizontalAlignment="Center" Height="46" VerticalAlignment="Center" Width="174" FontSize="30" Click="ResetClick" BorderBrush="White" Foreground="White" Background="#FF0600FF" Grid.Column="3" Margin="0,120,0,0"/>
-            <Button x:Name="button_Copy2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Check" HorizontalAlignment="Center" Height="46" VerticalAlignment="Center" Width="174" FontSize="30" Click="CheckClick" BorderBrush="White" Foreground="White" Background="#FF0600FF" Grid.Row="1"/>
 
 
         </Grid>

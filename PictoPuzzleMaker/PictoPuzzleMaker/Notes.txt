@@ -20,7 +20,98 @@ save options
 
 save - save JSON file
 export - exports puzzles to ASM files
-	- will also export sprite tables along with everything else - we'll write a function to create CHR data as well and populate the sprite table
+	- will also export sprite tables along with everything else - we'll write 
+	a function to create CHR data as well and populate the sprite table
 
+sprite data:
 
+CHR data works with bit planes. a tile is defined as such:
+
+	$r0_low, ... $r7_low, $r0_hi, ... $r7_hi
 	
+	if we set the sprite colros to a gradient, and we on;y need black and white,
+	then we can just double write the solution to the spirte
+	4 sprites per puzzle - start all bytes as 0
+	
+	to correctly define a se4t of 4 tiles, we need to make sure
+	we process the rows in correct order
+
+	solution bytes:
+
+	$row0_lowhalf, $row0_hihalf, $row1_lowhalf, ... $rowX_lowHalf, $rowX_hiHalf
+
+	every puzzle takes up 4 8x8 tiles
+	every even byte covers left 2 tiles, every odd covers the right 2
+	tiles are 0,1,2, and 3
+	so a 5x5 puzzle would have its bytes like:
+
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+
+	for a 10x10
+
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	2,3
+	2,3
+
+	for a 15x15
+
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	0,1
+	2,3
+	2,3
+	2,3
+	2,3
+	2,3
+	2,3
+	2,3
+
+	//to get the starting byte of a tile
+	//16 bytes per tile
+	//4 tiles per puzzle
+	//so puzzle index * 64
+
+	int[] spriteCHR = new int[fullSolution * 2] //16 bytes per tile
+	for(...) //zero out sprite array
+
+	for(int puzIdx = 0; puzIdx < 27; puzIdx++)
+	{
+		int puzzleOffset = (puzIdx * 64) //starting index in CHR table to write tile to 
+	
+		int[] solution = GetPuzzleByteSolution //convert puzzle to byte solution, as it would be stored in game
+		for(int byteIdx = 0; byteIdx < solution.length; byteIdx ++)
+		{
+			//let's assume 1 tile first 
+			
+			//index / 16 gives us the row offset, which would be offsetting us by 32 (so div by 16, mult by 32 -> x/16 * 32 -> 2x)
+			//we also need to add an extra 16 based on the even/edd of the byteIdx
+			//
+
+			int tileOffset = byteIdx << 1 + ((byteIdx & 1) << 4);
+			int rowOffset = byteIdx & 7;
+
+			//get byte from solution 
+			int byte = solution[byteIdx];
+			//store it in the CHR table
+			int finalIdx = puzzleOffset + tileOffset + rowOffset;
+			spriteCHR[finalIdx] = byte;
+			spriteCHR[finalIdx + 8] = byte;
+
+		}
+	}
