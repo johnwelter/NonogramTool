@@ -70,6 +70,14 @@ namespace PictoPuzzleMaker.Data
             }
         }
 
+        public void InvertSolution()
+        {
+            for(int i = 0; i < puzzleSolution.Length; i++)
+            {
+                puzzleSolution[i] ^= 0x01;
+            }
+        }
+
         public void SetSolution(int x, int y, int val)
         {
             //convert index to 1D 

@@ -54,6 +54,7 @@
                 <RowDefinition Height="144*"/>
             </Grid.RowDefinitions>
             <Grid Name="GlyphGrid" Grid.Column="2" Height="{Binding ActualWidth, ElementName=GlyphGrid, Mode=OneWay}" VerticalAlignment="Center"/>
+            <Grid Name="GlyphHelperGrid" Grid.Column="2" Height="{Binding ActualWidth, ElementName=GlyphHelperGrid, Mode=OneWay}" VerticalAlignment="Center" IsHitTestVisible="False"/>
             <TextBox x:Name="nameBox" HorizontalAlignment="Left" Height="39" Margin="10,51,0,0" TextWrapping="Wrap" Text="myGlyph" VerticalAlignment="Top" Width="120" FontSize="20" PreviewTextInput="FileValidationTextBox" Foreground="White" BorderBrush="White" Background="Black" SelectionBrush="#FF68FF00" TextChanged="nameBox_TextChanged" Grid.Column="2" Grid.Row="1"/>
             <Label x:Name="nameit" Content="Map Name" HorizontalAlignment="Left" Height="39" Margin="10,5,0,0" VerticalAlignment="Top" Width="146" FontSize="20" Foreground="White" Grid.Column="2" Grid.Row="1"/>
             <TextBox x:Name="glyphSizeBox" HorizontalAlignment="Left" Height="38" Margin="192,51,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="72" FontSize="20" MaxLength="2" PreviewTextInput="NumberValidationTextBox" BorderBrush="White" Background="Black" Foreground="White" SelectionBrush="#FF68FF00" TextChanged="glyphSizeBox_TextChanged" Grid.Column="2" Grid.Row="1"/>
@@ -99,7 +100,8 @@
                 </ListView.View>
             </ListView>
             <CheckBox x:Name="useEzPal" Content="Use EasyPal" HorizontalAlignment="Left" Margin="46,18,0,0" VerticalAlignment="Top" Height="22" Width="126" Foreground="White" Checked="UseEasyPalChecked" Unchecked="UseEasyPalChecked" Grid.Column="3" Grid.Row="1"/>
-            <Button x:Name="button_Copy" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Reset" HorizontalAlignment="Center" Height="46" VerticalAlignment="Center" Width="174" FontSize="30" Click="ResetClick" BorderBrush="White" Foreground="White" Background="#FF0600FF" Grid.Column="3" Margin="0,120,0,0"/>
+            <Button x:Name="button_Copy" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Reset" HorizontalAlignment="Center" Height="46" VerticalAlignment="Top" Width="174" FontSize="30" Click="ResetClick" BorderBrush="White" Foreground="White" Background="#FF0600FF" Grid.Column="3" Margin="0,255,0,0"/>
+            <Button x:Name="button_Copy2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Invert" HorizontalAlignment="Center" Height="46" VerticalAlignment="Top" Width="174" FontSize="30" Click="GridInvert" BorderBrush="White" Foreground="White" Background="#FF0600FF" Grid.Column="3" Margin="0,313,0,0"/>
 
 
         </Grid>

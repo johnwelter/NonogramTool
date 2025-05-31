@@ -33,7 +33,25 @@
                 <ControlTemplate TargetType="Label">
                     <Border Name="border"
                BorderThickness="1"
-               BorderBrush="Gray"
+               BorderBrush="DimGray"
+               Background="{TemplateBinding Background}">
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <Style x:Key="GridHelperLabel" TargetType="Label">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Label">
+                    <Border Name="border"
+               BorderThickness="1"
+               BorderBrush="LightGray"
                Background="{TemplateBinding Background}">
 
                     </Border>

@@ -115,30 +115,31 @@ namespace PictoPuzzleMaker
         {
             clearGrid();
             clearNTGrid();
-            populateGrid(Puzzle.s_SideLengths[currentPuzzle.puzzleSize]);
+            populateGrid(currentPuzzle.puzzleSize);
             populateNTGrid(Puzzle.s_SideLengths[currentPuzzle.puzzleSize]);
         }
 
         void populateGrid(int size)
         {
+
+            int sideLength = Puzzle.s_SideLengths[size];
+
             System.Console.WriteLine("set up grid");
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < sideLength; i++)
             {
 
                 RowDefinition r = new RowDefinition();
                 ColumnDefinition c = new ColumnDefinition();
 
-
                 GlyphGrid.RowDefinitions.Add(r);
                 GlyphGrid.ColumnDefinitions.Add(c);
-
             }
             System.Console.WriteLine("grid set!");
 
             System.Console.WriteLine("making buttons...");
-            for (int i = 0; i < size; i++)
+            for (int i = 0; i < sideLength; i++)
             {
-                for (int j = 0; j < size; j++)
+                for (int j = 0; j < sideLength; j++)
                 {
                     Label l = new Label();
                     //Button b = new Button();
@@ -175,8 +176,37 @@ namespace PictoPuzzleMaker
                     System.Console.WriteLine("added button at {0}, {1}", i, j);
 
                 }
-
             }
+            
+
+            for (int i = 0; i < size+1; i++)
+            {
+                RowDefinition hr = new RowDefinition();
+                ColumnDefinition hc = new ColumnDefinition();
+                GlyphHelperGrid.RowDefinitions.Add(hr);
+                GlyphHelperGrid.ColumnDefinitions.Add(hc);
+            }
+
+            for (int i = 0; i < size+1; i++)
+            {
+                for(int j = 0; j < size+1; j++)
+                {
+                    //populate helper grid
+                    Label l = new Label();
+                    //Button b = new Button();
+                    //Grid.SetColumn(b, j);
+                    Grid.SetColumn(l, j);
+                    //Grid.SetRow(b, i);
+                    Grid.SetRow(l, i);
+
+                    //if (j > 0 && j < glyphSize - 1 && i > 0 && i < glyphSize - 1)
+                    {
+                        l.Style = Resources.MergedDictionaries[0]["GridHelperLabel"] as Style;
+                    }
+                    GlyphHelperGrid.Children.Add(l);
+                }
+            }
+
 
         }
         void populateNTGrid(int size)
@@ -240,6 +270,11 @@ namespace PictoPuzzleMaker
             GlyphGrid.Children.Clear();
             GlyphGrid.RowDefinitions.Clear();
             GlyphGrid.ColumnDefinitions.Clear();
+
+            GlyphHelperGrid.Children.Clear();
+            GlyphHelperGrid.RowDefinitions.Clear();
+            GlyphHelperGrid.ColumnDefinitions.Clear();
+
             butts.Clear();
         }
         void clearNTGrid()
@@ -249,6 +284,77 @@ namespace PictoPuzzleMaker
             NameTableGrid.ColumnDefinitions.Clear();
             NTbutts.Clear();
         }
+        
+
+        private void GridInvert(object sender, RoutedEventArgs e)
+        {
+
+            //go through all the pixels and invert them
+            if(currentPuzzle == null)
+            {
+                return;
+            }
+
+            currentPuzzle.InvertSolution();
+            UpdateGridColors();
+
+        }
+        private void GridFill(object sender)
+        {
+            if ((Label)sender == null || currentPuzzle == null)
+            {
+                return;
+            }
+
+            //get the col/row of button
+            int x = Grid.GetColumn((Label)sender);
+            int y = Grid.GetRow((Label)sender);
+            int current = currentPuzzle.GetSolution(x, y);
+
+            int newVal = current ^ 0x01;
+
+            Queue<(int x, int y)> fillQueue = new Queue<(int x, int y)>();
+            fillQueue.Enqueue((x, y));
+
+            while(fillQueue.Count > 0)
+            {
+                var position = fillQueue.Dequeue();
+
+                var positionColor = currentPuzzle.GetSolution(position.x, position.y);
+
+                if(positionColor == newVal)
+                {
+                    continue;
+                }
+
+                currentPuzzle.SetSolution(position.x, position.y, newVal);
+
+                //get the positions in the cardinal directions, and queue them
+                if(position.x+1 < Puzzle.s_SideLengths[currentPuzzle.puzzleSize])
+                {
+                    fillQueue.Enqueue((position.x + 1, position.y));
+                }
+
+                if(position.x-1 >= 0)
+                {
+                    fillQueue.Enqueue((position.x - 1, position.y));
+                }
+
+                if(position.y+1 < Puzzle.s_SideLengths[currentPuzzle.puzzleSize])
+                {
+                    fillQueue.Enqueue((position.x, position.y + 1));
+                }
+
+                if(position.y-1 >=0)
+                {
+                    fillQueue.Enqueue((position.x, position.y - 1));
+                }
+
+            }
+
+            UpdateGridColors();
+        }
+        
         private void GridClick(object sender, bool setHold)
         {
             if((Label)sender == null || currentPuzzle == null)
@@ -295,8 +401,16 @@ namespace PictoPuzzleMaker
 
         private void StartPaintCtrl(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            GridClick(sender, true);
-            paintOn = true;
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                GridClick(sender, true);
+                paintOn = true;
+            }
+
+            if(e.RightButton == MouseButtonState.Pressed)
+            {
+                GridFill(sender);
+            }
         }
 
         private void NTStartPaintCtrl(object sender, System.Windows.Input.MouseButtonEventArgs e)
@@ -887,14 +1001,14 @@ namespace PictoPuzzleMaker
                 {
                     byte[] puzzle = puzzleSolutionCache[puzzleIdx];
                     int puzzleOffset = puzzleIdx * 64;
-                    int puzzleSize = Math.Sign(puzzle.Length / 10); //this is a hack, but should work for our needs- everything over 5 will use 2 bytes per row
+                    
+                    int twoBytesPerRow = ((puzzle.Length/5) & 1) ^ 1; 
 
                     for (int byteIdx = 0; byteIdx < puzzle.Length; byteIdx++)
                     {
-                        int colOffset = (((byteIdx & 16) << 1) + ((byteIdx & 1) << 4)) * puzzleSize;
+                        int colOffset = (((byteIdx & 16) << 1) + ((byteIdx & 1) << 4)) * twoBytesPerRow;
 
-                        //also a hack
-                        int rowIndexOffset = puzzleSize > 0 ? byteIdx >> 1 : byteIdx;
+                        int rowIndexOffset = byteIdx >> twoBytesPerRow;
 
                         int rowOffset = (rowIndexOffset) & 7;
                         byte tileByte = puzzle[byteIdx];
