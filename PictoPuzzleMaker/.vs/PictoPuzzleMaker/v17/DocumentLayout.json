@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\paletteselection.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\paletteselection.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\paletteselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\paletteselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|z:\\gamedev\\tools\\homebrewtools\\repros\\pictopuzzlemaker\\pictopuzzlemaker\\pictopuzzlemaker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\dictionary1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\data\\puzzlebank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,16 +38,8 @@
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\data\\bankobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\paletteselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\paletteselection.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\paletteselection.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\paletteselection.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\wpfutils\\ordinalconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +58,7 @@
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|z:\\gamedev\\tools\\homebrewtools\\repros\\pictopuzzlemaker\\pictopuzzlemaker\\pictopuzzlemaker\\data\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\pictopuzzlemaker\\data\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A8243C0-58DB-4B20-9B42-4ABDA53DF0A0}|PictoPuzzleMaker\\PictoPuzzleMaker.csproj|solutionrelative:pictopuzzlemaker\\data\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -73,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 485,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,20 +81,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\MainWindow.xaml.cs",
               "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\MainWindow.xaml.cs",
               "RelativeToolTip": "PictoPuzzleMaker\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoBAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAOQCAAAAAAAAAIA1wPkCAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T13:51:37.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RuntimeType.cs",
               "DocumentMoniker": "C:\\Users\\John Welter\\AppData\\Local\\Temp\\.vsdbgsrc\\cbdaf2af33b7912f3376243f07ad3a39cc0c6b1ce6b9eb3db88ce3660b95bac4\\RuntimeType.cs",
               "ToolTip": "C:\\Users\\John Welter\\AppData\\Local\\Temp\\.vsdbgsrc\\cbdaf2af33b7912f3376243f07ad3a39cc0c6b1ce6b9eb3db88ce3660b95bac4\\RuntimeType.cs [Read Only]",
@@ -116,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Dictionary1.xaml",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\Dictionary1.xaml",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\Dictionary1.xaml",
@@ -128,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\Properties\\AssemblyInfo.cs",
@@ -136,8 +136,7 @@
               "RelativeToolTip": "PictoPuzzleMaker\\Properties\\AssemblyInfo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T11:57:21.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T11:57:21.06Z"
             },
             {
               "$type": "Document",
@@ -149,8 +148,7 @@
               "RelativeToolTip": "PictoPuzzleMaker\\Properties\\Resources.Designer.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T11:57:11.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T11:57:11.095Z"
             },
             {
               "$type": "Document",
@@ -162,8 +160,7 @@
               "RelativeToolTip": "PictoPuzzleMaker\\Solver\\Licence.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-02-21T15:40:59.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T15:40:59.088Z"
             },
             {
               "$type": "Document",
@@ -175,8 +172,7 @@
               "RelativeToolTip": "PictoPuzzleMaker\\Solver\\ValiditySolver.cs",
               "ViewState": "AgIAAK8AAAAAAAAAAAAcwAQAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T11:25:25.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-19T11:25:25.296Z"
             },
             {
               "$type": "Document",
@@ -188,25 +184,24 @@
               "RelativeToolTip": "PictoPuzzleMaker\\WPFUtils\\OrdinalConverter.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T21:02:35.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T21:02:35.445Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "PaletteSelection.xaml.cs",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\PaletteSelection.xaml.cs",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\PaletteSelection.xaml.cs",
               "ToolTip": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\PaletteSelection.xaml.cs",
               "RelativeToolTip": "PictoPuzzleMaker\\PaletteSelection.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAtwDAAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAtwD0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T01:46:26.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\App.xaml.cs",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\App.xaml.cs",
@@ -214,12 +209,11 @@
               "RelativeToolTip": "PictoPuzzleMaker\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T22:09:09.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T22:09:09.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "PaletteSelection.xaml",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\PaletteSelection.xaml",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\PaletteSelection.xaml",
@@ -231,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BankObserver.cs",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\Data\\BankObserver.cs",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\Data\\BankObserver.cs",
@@ -239,12 +233,11 @@
               "RelativeToolTip": "PictoPuzzleMaker\\Data\\BankObserver.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T20:31:58.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T20:31:58.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PuzzleBank.cs",
               "DocumentMoniker": "Z:\\GameDev\\Tools\\HomebrewTools\\repros\\PictoPuzzleMaker\\PictoPuzzleMaker\\PictoPuzzleMaker\\Data\\PuzzleBank.cs",
               "RelativeDocumentMoniker": "PictoPuzzleMaker\\Data\\PuzzleBank.cs",
@@ -252,8 +245,7 @@
               "RelativeToolTip": "PictoPuzzleMaker\\Data\\PuzzleBank.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAuwEsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T19:53:42.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T19:53:42.887Z"
             },
             {
               "$type": "Document",
@@ -277,8 +269,7 @@
               "RelativeToolTip": "PictoPuzzleMaker\\Data\\Constants.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T16:52:41.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T16:52:41.734Z"
             }
           ]
         }
